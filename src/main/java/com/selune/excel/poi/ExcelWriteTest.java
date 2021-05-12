@@ -133,7 +133,7 @@ public class ExcelWriteTest {
         workbook.write(fileOutputStream);
         fileOutputStream.close();
         // 删除临时文件
-        ((SXSSFWorkbook) workbook).dispose()
+        ((SXSSFWorkbook) workbook).dispose();
         Long end2 = System.currentTimeMillis();
         System.out.println((double) (end1 - begin) / 1000);
         System.out.println((double) (end2 - begin) / 1000);
